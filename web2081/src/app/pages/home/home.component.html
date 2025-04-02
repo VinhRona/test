@@ -1,0 +1,5 @@
+<ul>
+  @for (item of products; track $index) {
+    <li>{{item.name}} <a [routerLink]="['product',item.id]">Chi tiết</a></li>
+  }
+</ul>
